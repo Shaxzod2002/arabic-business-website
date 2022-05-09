@@ -1,0 +1,543 @@
+.container-xxl
+    overflow: hidden
+    .navbar
+        position: relative
+        overflow: hidden
+        width: 108%
+        left: -4%
+        min-height: 50px
+        height: auto
+        background: #d4d4d4
+        .nav
+            position: relative
+            width: 100px
+            min-height: 30px
+            height: auto
+            background: #fff
+            cursor: pointer
+            transition: all 0.3s linear 
+            &:hover
+                background: #44daff
+            .ican
+                position: absolute
+                font-size: 17px
+                top: 50%
+                left: 10px
+                transform: translateY(-50%)
+
+            p
+                position: relative
+                font-size: 12px
+                left: 50%
+                top: 50%
+                transform: translate(-20%, 40%)
+        .links
+            .h5
+                color: #000
+                cursor: pointer
+            .facebook
+                .h5
+                    transition: all 0.3s linear
+                    &:hover
+                        color: #008cff
+                        transform: scale(1.2)
+            .twitter
+                .h5
+                    transition: all 0.3s linear
+                    &:hover
+                        color: #00c3ff
+                        transform: scale(1.2)
+            .instagram
+                .h5
+                    transition: all 0.3s linear
+                    &:hover
+                        color: #008cff
+                        transform: scale(1.2)
+            .googleplus
+                .h5
+                    transition: all 0.3s linear
+                    &:hover
+                        color: #ff0000
+                        transform: scale(1.2)
+                        
+    .header-logo
+        position: relative
+        min-height: 200px
+        height: auto
+        .logo 
+            height: 100px
+            background: url('../image/ico/logo.png') no-repeat center
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+        .content
+            position: relative
+            .phone, .address, .email
+                transition: all 0.3s linear
+                cursor: pointer
+                &:hover
+                    color: #44abff     
+            .address-block
+                position: absolute
+                bottom: 50px
+                left: 0%
+                font-size: 10px
+                height: 40px
+                background: #e7e7e7  
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 100%
+                    left: 50%
+                    transform: translateX(-50%)
+                    border: 15px solid #e7e7e7
+                    border-left: 15px solid transparent
+                    border-right: 15px solid transparent
+                    border-bottom: 0
+
+    .menu-search
+        min-height: 50px
+        height: auto
+        .list
+            .item
+                list-style: none
+                font-weight: bold
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                font-size: 10px
+                cursor: pointer
+                transition: all 0.3s linear
+                &:hover
+                    color: #44abff
+                &:hover::before
+                    position: absolute
+                    content: ''
+                    transition: all 0.3s linear
+                    top: 120%
+                    border: 20px solid #44abff
+                    border-left: 15px solid transparent
+                    border-right: 15px solid transparent
+                    border-top: 0
+        .form-control
+            width: 200px  
+    @media ( max-width: 467.9px )
+        .menu-search
+            .list
+                .item
+                    min-height: 40px
+                    font-size: 8px
+            .search
+                .magnifying
+                    position: absolute
+                    left: 50px
+                input
+                    width: 200px
+    .search
+        position: relative
+        .magnifying
+            font-size: 18px   
+            position: absolute
+            display: flex
+            bottom: 50% !important
+            left: 20%
+        input
+            position: absolute 
+            left: 50%
+            bottom: 50%
+            transform: translate(-50%, 25%)
+    .header
+        position: relative
+        min-height: 600px
+        background: url(../image/header-bg.jpg) no-repeat center
+        h2
+            position: absolute
+            left: 30%
+            top: 30%
+            color: #dbdbdb
+        p
+            color: #dbdbdb
+            position: absolute
+            top: 36%
+            left: 33%
+        .carousel-fade
+            position: absolute
+            top: 60%
+            left: 50%
+            transform: translateX(-50%)
+            width: 300px
+    @media ( max-width: 467.9px)
+        .header
+            h2
+                font-size: 15px
+                left: 50%
+                transform: translateX(-50%)
+            p
+                text-align: center
+                font-size: 14px
+                left: 50%
+                transform: translateX(-50%)
+    .list-isama 
+        width: 80%
+        position: relative
+        left: 10%
+    @media (max-width: 768px)
+        .list-isama
+            width: 100%
+            h4
+                font-size: 20px
+            p
+                font-size: 14px
+            img
+                width: 60px
+    .settings
+        width: 80%
+        position: relative
+        left: 10%
+        .title
+            width: 40%
+            position: relative
+            left: 30%
+            img
+                width: 80px
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+        .setings-list
+            margin: 20px 0
+            div
+                padding: 10px 10px
+
+            img
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+            .mobile
+                img
+                    width: 60px
+    @media (max-width: 768px)
+        .settings
+            .title
+                width: 80%
+                position: relative
+                left: 50%
+                transform: translateX(-50%)
+                h3
+                    font-size: 25px
+                p
+                    font-size: 16px
+                img
+                    width: 100px
+            .setings-list
+                h4
+                    font-size: 20px
+                p
+                    font-size: 14px
+                img
+                    width: 50px
+                    padding 0 10px
+                .mobile
+                    img
+                        width: 40px
+    @media ( max-width: 467.9px)
+        .settings
+            .title
+                h3
+                    font-size: 20px
+                p
+                    font-size: 14px
+                img
+                    width: 80px
+            .setings-list
+                h4
+                    font-size: 18px
+                p
+                    font-size: 12px
+                img
+                    width: 40px
+                    padding 0 10px
+                .mobile
+                    img
+                        width: 30px
+    .project
+        position: relative
+        background: #bbb
+        .title
+            width: 40%
+            .flask
+                font-size: 80px
+                color: #0061b1
+        .navbar-list
+            position: relative
+            ul
+                width: 60%
+                position: relative
+                li
+                    transition: all 0.3s linear
+                    list-style: none
+                    font-size: 14px
+                    cursor: pointer
+                    display: flex
+                    min-height: 40px
+                    justify-content: center
+                    align-items: center
+                    &:hover
+                        background: #fff
+        .list-projects
+            width: 80%
+            position: relative
+            grid-gap: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            .block
+                width: 250px
+                height: 250px
+                background: #fff
+                .logo
+                    width: 95%
+                    height: 70%
+                    background: #bbb
+                    position: relative
+                    top: 5%
+                    img
+                        width: 215px
+                        height: 180px
+                        object-fit: cover
+                .message
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    .title-text
+                        display: flex
+                        justify-content: center
+                        .plus
+                            position: relative
+                            top: 100%
+                            font-size: 25px
+                            cursor: pointer
+                            transition: all 0.3s linear
+                            &:hover
+                                color: #44abff
+                        .pencil
+                            position: relative
+                            top: 100%
+                            font-size: 25px
+                            cursor: pointer
+                            transition: all 0.3s linear
+                            &:hover
+                                color: #44abff
+    @media (max-width: 768px)
+        .project
+            .title
+                width: 80%
+                .flask
+                    font-size: 70px
+                h3
+                    font-size: 20px
+                p
+                    font-size: 14px
+            .navbar-list
+                width: 80%
+                font-size: 14px
+                display: flex
+                justify-content: center
+                align-items: center
+                ul
+                    width: 100%
+                    li
+                        font-size: 12px      
+
+    .team
+        .title
+            position: relative
+            width: 60%
+            left: 20%
+            p
+                font-size: 14px
+            .title-image
+                img
+                    width: 100px
+                    height: 100px
+                    border-radius: 50%
+                    object-fit: cover
+            .title-text
+                width: 50%
+        .list-team
+            width: 80%
+            position: relative
+            left: 10%
+            display: flex
+            .program
+                position: relative
+                height: 300px
+                background: #bbb 
+                margin: 5px 0
+                border: 1px solid #000
+                img
+                    position: relative
+                    top: 5%
+                    left: 50%
+                    transform: translateX(-50%)
+                    border-radius: 50%
+                .title
+                    position: relative
+                    top: 10%
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 100%
+                    text-align: center
+                .list-link
+                    position: relative
+                    top: 10%
+                    height: 40px
+                    background: #fff
+                    display: flex
+                    flex-direction: row
+                    ul
+                        display: flex
+                        width: 100%
+                        flex-direction: row
+                        position: relative
+                        left: -5%
+                        justify-content: space-around
+                        top: 50%
+                        transform: translate(0%, -50%)
+                        li
+                            list-style: none
+                            cursor: pointer
+                            transition: all 0.3s linear
+                            &:hover
+                                color: #44abff
+                                transform: scale(1.2)
+    @media (max-width: 768px)
+        .team
+            .title
+                width: 80%
+                left: 50%
+                transform: translateX(-50%)
+                .title-image
+                    img
+                        width: 80px
+                        height: 80px
+                .title-text
+                    width: 75%
+    @media ( max-width: 467.9px)
+        .team
+            .title
+                width: 80%
+                left: 50%
+                transform: translateX(-50%)
+                .title-image
+                    img
+                        width: 60px
+                        height: 60px
+                .title-text
+                    width: 75%
+    .mapp
+        position: relative
+        min-height: 400px
+        height: auto
+        background: url(../image/mapp.jpg) no-repeat center
+        .image            
+            img
+                width: 50px
+                position: absolute
+                top: 40%
+                left: 50%
+        .mapp-links
+            position: absolute
+            left: 30%
+            top: 70%
+            display: flex
+            gap: 20px
+            .link
+                position: relative
+                font-size: 40px
+                cursor: pointer
+                display: flex
+                transition: all 0.3s linear
+                &:hover
+                    color: #44abff
+                &::before
+                    top: 0
+                    left: 0
+                    position: absolute
+                    width: 150px
+                    height: 40px
+                    background: #111
+                    content: '795 Almaddinah Way'
+            
+            .loc
+                position: absolute
+                left: -75%
+                bottom: 80px !important
+                width: 250px
+                min-height: 80px
+                height: auto
+                display: none
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                color: #000
+                background: #bbb
+                &::before
+                    position: absolute
+                    content: ''
+                    border: 20px solid #bbb
+                    border-left: 15px solid transparent
+                    border-right: 15px solid transparent
+                    border-bottom: 0
+                    top: 100%
+                    left: 50%
+                    transform: translateX(-50%)
+            .mail
+                position: absolute
+                left: -35%
+                bottom: 80px !important
+                width: 250px
+                min-height: 80px
+                height: auto
+                display: none
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                color: #000
+                background: #bbb
+                &::before
+                    position: absolute
+                    content: ''
+                    border: 20px solid #bbb
+                    border-left: 15px solid transparent
+                    border-right: 15px solid transparent
+                    border-bottom: 0
+                    top: 100%
+                    left: 50%
+                    transform: translateX(-50%)
+            .tell
+                position: absolute
+                left: 0%
+                bottom: 80px !important
+                width: 250px
+                min-height: 80px
+                height: auto
+                display: none
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                color: #000
+                background: #bbb
+                &::before
+                    position: absolute
+                    content: ''
+                    border: 20px solid #bbb
+                    border-left: 15px solid transparent
+                    border-right: 15px solid transparent
+                    border-bottom: 0
+                    top: 100%
+                    left: 50%
+                    transform: translateX(-50%)
+
+@media (max-width: 991.9px)
+    .menu-search
+        .list
+            .item
+                &:hover::before
+                    display: none
